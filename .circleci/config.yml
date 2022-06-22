@@ -11,9 +11,9 @@ jobs:
     steps:
       - run:
           name: "output hello world"
-          command: mkdir -p workspace
-          command: echo "Hello World" > workspace/output.txt
+          command: echo "Hello World" > output.txt
       - persist_to_workspace:
+          root: .
           paths:
             - output.txt
 
@@ -22,7 +22,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: .
       - run:
           name: "print hello world"
           command: cat output.txt
