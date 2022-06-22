@@ -43,6 +43,6 @@ workflows:
       - print_hello
   print_world_workflow:
     jobs:
-      - print_world_workflow:
+      - print_world:
           requires: [print_hello]
   
