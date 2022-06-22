@@ -19,7 +19,7 @@ jobs:
           command: "echo Hello, World!"
   print-hello:
     docker:
-      - image: circleci/node:13.8.
+      - image: circleci/node:13.8.0
     steps:
       - run:
           name: "print hello"
