@@ -49,4 +49,6 @@ workflows:
       - print-hello
       - print-world:
           requires: [print-hello]
+      - print-my-name:
+          requires: [print-world]
   
