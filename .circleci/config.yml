@@ -48,7 +48,8 @@ jobs:
         - run: this should trigger a failure
 
         - run: 
-            name: echo "oops the step above me failed"
+            name: This step will trigger a non zero exit
+            command: echo "oops the step above me failed"
             when: on_fail
 
   # say-hello:
