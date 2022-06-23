@@ -4,7 +4,7 @@ version: 2.1
 
 commands:
   print_pipeline_id:
-    descriprion: "Test command"
+    description: "Test command"
     parameters:
       to:
         type: string
