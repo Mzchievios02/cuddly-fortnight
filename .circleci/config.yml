@@ -45,7 +45,7 @@ jobs:
       docker:
       - image: cimg/base:stable
       steps:  
-        - run: exit 1
+        - run: this should trigger a failure
 
         - run: 
             name: This step will trigger a non zero exit
