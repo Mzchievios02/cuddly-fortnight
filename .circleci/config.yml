@@ -47,7 +47,8 @@ jobs:
       steps:  
         - run: echo "This is an ok test"
 
-        - run: this should trigger a failure
+        - run: 
+            name: this should trigger a failure
             when: on_fail
 
   # say-hello:
