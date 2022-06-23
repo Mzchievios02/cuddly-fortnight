@@ -7,7 +7,7 @@ commands:
     descriprion: "Test command"
     parameters:
       to:
-        type: integer
+        type: string
         default: 400
     steps:
       - run: echo << parameters.to >>
