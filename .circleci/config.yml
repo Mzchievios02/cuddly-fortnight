@@ -45,10 +45,10 @@ jobs:
       docker:
       - image: cimg/base:stable
       steps:  
-        - run: echo "This is an ok test"
+        - run: this should trigger a failure
 
         - run: 
-            name: this should trigger a failure
+            name: echo "oops the step above me failed"
             when: on_fail
 
   # say-hello:
